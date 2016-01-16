@@ -1,0 +1,10 @@
+{
+  "name": "araneum",
+  "content": "content",
+  "author": "Sasha Khamkov",
+  "port": "3000",
+  "views": "app/views",
+  "viewEngine": "ejs",
+  "theme": "default",
+  "highlightJsTheme": "monokai-sublime"
+}

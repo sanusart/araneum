@@ -1,0 +1,28 @@
+<div class="mb3">
+  <header class="py2 mt3 border-bottom">
+    <div class="sm-flex flex-center flex-wrap">
+      <div class="flex-auto">
+        <div class="mxn1"><a href="/" title="Basscss" class="btn compact btn-link btn-small p1"><%= prop.config.name %></a></div>
+        <h1 class="m0" style="font-size:3rem;">
+          <%= prop.page.title %>
+        </h1>
+      </div>
+    </div>
+  </header>
+  <div class="h5 mxn1"><a href="/" title="Home" class="btn compact btn-link p1 regular">Home</a>
+    <% if (prop.page.type === 'category') { %>
+      <span class="">
+        <span class="muted">/</span>
+        <a href="/cat/<%= prop.page.category %>" title="Docs" class="btn compact btn-link p1 regular">
+          <%= prop.page.category %>
+        </a>
+      </span>
+    <% } %>
+    <span class="">
+      <span class="muted">/</span>
+      <a href="<%= prop.page.slug %>" title="Guides" class="btn compact btn-link p1 regular">
+        <%= prop.page.title %>
+      </a>
+    </span>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+  <% include head.html %>
+
+  <body>
+
+    <div class="container px2 sm-px3">
+      <% include header.html %>
+      <article class="markdown-body">
+        <h2>Category: <i><%= prop.page.category %></i></h2>
+
+        <%
+        var menu = prop.data.filter(function(page){
+          return (page.category === prop.page.category);
+        });
+        for(var i=0; i < menu.length; i++) { %>
+          <h3><a class="btn compact btn-link p0" href="<%= menu[i].slug %>"><%= menu[i].name %></a></h3>
+          <span><%- menu[i].text.replace(/<\/?(h1|h2|h3|span|div|img|p...)\b[^<>]*>/g, "") %></span>
+          <% if (i+1 !== menu.length) { %>
+            <hr>
+          <% } %>
+        <% } %>
+
+      </article>
+      <% include footer.html %>
+    </div>
+
+  </body>
+
+  </html>
