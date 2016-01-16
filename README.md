@@ -1,6 +1,6 @@
 # Araneum
 
-> Please **note**, that Araneum is totally **work in progress**, functionality and structure are subject to change.
+> Please **note**, that Araneum is totally **work in progress**, functionality, structure or even project name are subject to change.
 
 Araneum will let you create content with ease.
 You can use Araneum to build your blog, site, documentation or knowledge base using markdown and customize it with easy to create themes.
@@ -15,18 +15,25 @@ Araneum build on top of [koajs](http://koajs.com/) - web framework for Node.js, 
 - change to newly created directory: `cd araneum`
 - Install dependencies: `npm install`
 - Run it with: `npm start`
+- Read documentation
 
 ## TODO
 
 [x] Routing
 
-[x] Pages&amp posts
+[x] Pages &amp; posts
 
 [x] Categories
+
+[x] Themes
+
+[ ] Search
 
 [ ] Error handling
 
 [ ] static site generation
+
+[ ] Documentation
 
 ##Why? <small>There are piles of stuff like that!</small>
 

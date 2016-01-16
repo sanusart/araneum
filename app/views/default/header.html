@@ -2,7 +2,10 @@
   <header class="py2 mt3 border-bottom">
     <div class="sm-flex flex-center flex-wrap">
       <div class="flex-auto">
-        <div class="mxn1"><a href="/" title="Basscss" class="btn compact btn-link btn-small p1"><%= prop.config.name %></a></div>
+        <div class="mxn1">
+          <a href="/" title="Basscss" class="btn compact btn-link btn-small p1"><%= prop.config.name %></a>
+          <span>v<%= prop.version %></span>
+        </div>
         <h1 class="m0" style="font-size:3rem;">
           <%= prop.page.title %>
         </h1>

@@ -1,3 +1,4 @@
+var araneum = require('./package.json');
 var config = require('./config.json');
 var koa = require('koa');
 var app = koa();
@@ -16,6 +17,7 @@ app.use(process());
 app.use(function*(next) {
   this.defaultProps = {
     config: config,
+    version: araneum.version,
     page: {
       title: config.name,
       menu: 'false',

@@ -1,6 +1,6 @@
 <%
 var menu = prop.data.filter(function(page){
-  return true;//(page.type === 'page' && page.menu === 'true');
+  return (page.type === 'page' && page.menu === 'true');
 });
 for(var i=0; i < menu.length; i++) { %>
   <a class="btn compact btn-link p1" href="<%= menu[i].slug %>"><%= menu[i].name %></a>
