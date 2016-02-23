@@ -5,6 +5,7 @@
 Araneum will let you create content with ease.
 You can use Araneum to build your blog, site, documentation or knowledge base using markdown and customize it with easy to create themes.
 
+Example: https://araneum.herokuapp.com
 ## Made of...
 
 Araneum build on top of [koajs](http://koajs.com/) - web framework for Node.js, and it is actually a pile of modules brought together.
