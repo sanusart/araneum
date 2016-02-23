@@ -4,7 +4,7 @@ var koa = require('koa');
 var app = koa();
 var route = require('koa-route');
 var render = require('./app/lib/render');
-var process = require('./app/lib/process');
+var processAraneum = require('./app/lib/process');
 var marked = require('marked');
 var yaml = require('yaml-front-matter');
 var serve = require('koa-static');
@@ -12,7 +12,15 @@ var fs = require('fs');
 var path = require('path');
 var _ = require('lodash');
 
-app.use(process());
+// do compression stuff first
+app.use(require('koa-compress')());
+
+// then use this minifier
+app.use(require('koa-html-minifier')({
+    collapseWhitespace: true
+}));
+
+app.use(processAraneum());
 
 app.use(function*(next) {
   this.defaultProps = {
@@ -113,4 +121,4 @@ app.use(route.get('/:page', pages.page));
 app.use(route.get('/cat/:cat', pages.cat));
 app.use(route.get('/:cat/:page', pages.catPage));
 
-app.listen(config.port || 3000);
+app.listen(process.env.PORT || config.port || 3000);

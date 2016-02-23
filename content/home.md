@@ -13,4 +13,4 @@ You can use Araneum to build your blog, site, documentation or knowledge base us
 
 Please **note**, that Araneum is totally **work in progress**, functionality and structure are subject to change.
 
-[Documentation](documentation)
+<a href="cat/docs" class="btn btn-outline home-docs-link">Documentation</a>

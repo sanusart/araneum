@@ -4,6 +4,7 @@ category: "docs"
 type: "category"
 slug: "/docs/how-to-read-this-file"
 order: 2
+menu: "false"
 ---
 
 # Hello, this is body text.

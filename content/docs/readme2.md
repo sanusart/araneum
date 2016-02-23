@@ -4,6 +4,7 @@ category: "docs"
 type: "category"
 slug: "/docs/readme2"
 order: 2
+menu: "false"
 ---
 
 # Hello, this is body text.

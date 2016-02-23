@@ -1,6 +1,8 @@
 <%
 var menu = prop.data.filter(function(page){
-  return (page.type === 'page' && page.menu === 'true');
+  return (page.menu === 'true');
+}).sort(function(a,b) {
+  return a.order > b.order;
 });
 for(var i=0; i < menu.length; i++) { %>
   <a class="btn compact btn-link p1" href="<%= menu[i].slug %>"><%= menu[i].name %></a>

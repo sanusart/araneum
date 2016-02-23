@@ -26,7 +26,7 @@ module.exports = function process() {
         "text": marked(pVar.__content).substring(0,100)
       });
     });
-    this.data = _.sortByAll(pageVars, ['order']);
+    this.data = _.sortBy(pageVars, ['order']);
     // console.log(this.data);
     yield next;
   };

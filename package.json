@@ -4,7 +4,7 @@
   "description": "web pages and docs",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/nodemon --harmony index.js"
+    "start": "nodemon --harmony index.js"
   },
   "keywords": [
     "docs",
@@ -14,15 +14,7 @@
   ],
   "author": "Sasha Khamkov <sanusart@gmail.com>",
   "license": "MIT",
-  "devDependencies": {
-    "chokidar": "^1.4.1",
-    "co-glob": "0.0.2",
-    "forever": "^0.15.1",
-    "glob": "^6.0.1",
-    "koa-rewrite": "^1.1.1",
-    "lo-dash": "^1.0.0",
-    "nodemon": "^1.8.1"
-  },
+  "devDependencies": {},
   "dependencies": {
     "co-view": "0.0.1",
     "ejs": "^2.3.4",
@@ -33,6 +25,13 @@
     "koa-static": "^1.5.2",
     "koa-views": "^3.1.0",
     "marked": "^0.3.5",
-    "yaml-front-matter": "^3.2.3"
+    "yaml-front-matter": "^3.2.3",
+    "co-glob": "0.0.2",
+    "glob": "^6.0.1",
+    "koa-compress": "^1.0.8",
+    "koa-html-minifier": "^1.0.1",
+    "koa-rewrite": "^1.1.1",
+    "lodash": "^4.0.0",
+    "nodemon": "^1.8.1"
   }
 }

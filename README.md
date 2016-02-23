@@ -27,15 +27,17 @@ Araneum build on top of [koajs](http://koajs.com/) - web framework for Node.js, 
 
 [x] Themes
 
+[ ] Documentation
+
 [ ] Search
 
 [ ] Error handling
 
 [ ] static site generation
 
-[ ] Documentation
+[ ] Add more themes
 
-##Why? <small>There are piles of stuff like that!</small>
+## Why? <small>There are piles of stuff like that!</small>
 
 I don'd have a real reason and I don't need one.
 

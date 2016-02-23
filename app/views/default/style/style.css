@@ -1,10 +1,10 @@
 body {
   background: #f2f2f2;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "museo","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 100;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 100;
+  font-weight: 300;
 }
 .hp .material-icons {
   font-size: 70px;
@@ -26,4 +26,10 @@ blockquote:before {
 }
 blockquote p {
   display: inline;
+}
+.home-docs-link {
+  width: 30%;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
 }
