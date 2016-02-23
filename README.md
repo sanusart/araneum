@@ -20,23 +20,23 @@ Araneum build on top of [koajs](http://koajs.com/) - web framework for Node.js, 
 
 ## TODO
 
-[x] Routing
+- [x] Routing
 
-[x] Pages &amp; posts
+- [x] Pages &amp; posts
 
-[x] Categories
+- [x] Categories
 
-[x] Themes
+- [x] Themes
 
-[ ] Documentation
+- [ ] Documentation
 
-[ ] Search
+- [ ] Search
 
-[ ] Error handling
+- [ ] Error handling
 
-[ ] static site generation
+- [ ] static site generation
 
-[ ] Add more themes
+- [ ] Add more themes
 
 ## Why? <small>There are piles of stuff like that!</small>
 
